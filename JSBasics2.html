@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript">
+        function magic_multiply(x,y){
+            if (typeof y === 'string'){
+              console.log("Y cannot be a string.")
+
+            }
+           if (typeof x === 'string'){
+               let s = x.repeat(y);
+              console.log(s);
+
+            }
+
+            if (Array.isArray(x)){
+              for(var i= 0; i<x.length; i++){
+              x[i] = x[i] * y;
+
+              }
+              console.log (x,y);
+           }
+           else{
+             let z = x*y;
+             console.log(z);
+           }
+
+
+        }
+         magic_multiply("george",4)
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
