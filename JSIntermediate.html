@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Intermediate</title>
+        <script type="text/javascript">
+        function star_string(num){
+            var star= "*";
+            let stars = star.repeat(num);
+            console.log(stars);
+        }
+
+        star_string(8)
+
+
+function draw_stars(arr){
+  var star="*";
+  for(var i = 0; i<arr.length; i++){
+    let stars = star.repeat(arr[i]);
+    console.log(stars);
+  }
+
+}
+draw_stars([4,5,10,9])
+
+
+function draw_stars(arr){
+  var star="*";
+  var len= arr.length;
+
+
+  for(var i = 0; i<arr.length; i++){
+  if (typeof arr[i] === 'string'){
+     var new_string= arr[i].split('');
+     var lower =new_string[0].toLowerCase();
+     var letter = lower.repeat(len);
+     console.log(letter);
+      }
+
+  else{
+    var stars = star.repeat(arr[i]);
+    console.log(stars);
+    }
+  }
+}
+
+draw_stars([4,"Tom",10,"Michael",9])
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
